@@ -31,11 +31,14 @@ public class Ej2_caravacacarretero_fernando {
 		
 		examen.mostrar_imcs(imcs_pacientes);
 		
-		
-		System.out.println("\nIntroduce el número de paciente para realizar su media: ");
+		do {
+		System.out.println("\nIntroduce el número de paciente [1-4] para realizar su media: ");
 		paciente = teclado.nextInt();
+		if (paciente <=0 || paciente > 4)
+			System.out.println("\nERROR. ¡Vuelve a introducir el número de nuevo!");
+		}while(paciente<=0 || paciente >4);
 		
-		examen.media_paciente(imcs_pacientes, paciente);
+		
 		
 		System.out.printf("\nLa media es: %.2f",examen.media_paciente(imcs_pacientes, paciente));
 	}

@@ -24,6 +24,15 @@ public class examen {
 		
 	}
 		
+		/**
+		 * @param matriz
+		 * @param paciente
+		 * @return sumatorio
+		 * 
+		 * La función considera los pacientes a partir del 1, teniendo en cuenta que si es
+		 * introducido un número para paciente menor o igual que 0 o mayor que 4, no entrará en
+		 * la función.
+		 */
 		public static double media_paciente(double matriz[][], int paciente) {
 		double sumatorio = 0;
 		for (int i = paciente-1; i < paciente; i++) {
