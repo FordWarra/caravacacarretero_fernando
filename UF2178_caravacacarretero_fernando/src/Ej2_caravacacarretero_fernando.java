@@ -12,6 +12,8 @@ public class Ej2_caravacacarretero_fernando {
 
 	/**
 	 * @param args
+	 * Se comprueba mediante un bucle do while que el valor de paciente se encuentre entre [1-4] antes de la 
+	 * llamada a la funcion media_paciente.
 	 */
 	public static void main(String[] args) {
 		// TODO Esbozo de método generado automáticamente
